@@ -1,0 +1,653 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fullpage {
+  background-color: rgb(212, 33, 33);
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header > img {
+  width: 7vw;
+  margin-right: 10px;
+}
+
+.case {
+  flex-basis: 50%;
+  color: white;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-around;
+  align-items: center;
+}
+.case > p:nth-child(4) {
+  color: black;
+  padding: 10px 10px;
+  background-color: white;
+}
+.case > p:nth-child(4):hover {
+  color: white;
+  background-color: rgb(122, 12, 12);
+  box-shadow: 0px 0px 10px 2px rgb(61, 25, 25);
+  cursor: pointer;
+}
+.content {
+  height: 80vh;
+  display: flex;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.content > p:nth-child(1) {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+button {
+  margin-right: 10px;
+  font-size: 10px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.content > p:nth-child(2) {
+  margin-bottom: 15px;
+}
+.menu {
+  display: none;
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 25px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .case {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+.ndpage {
+  width: 100%;
+  height: 100vh;
+  padding: 80px 150px;
+  background-color: aliceblues;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.secpage > p:nth-child(1) {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.secpage > p:nth-child(2) {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.secpage > p:nth-child(3) {
+  width: 100px;
+  background-color: rgb(212, 33, 33);
+  margin-right: 80%;
+  margin-bottom: 20px;
+
+  padding: 10px 10px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.img2 > img {
+}
+@media screen and (max-width: 900px) {
+  .ndpage {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .img2 > img {
+    width: 40vw;
+  }
+  .secpage {
+    order: 2;
+  }
+}
+.rdpage {
+  background-color: aliceblue;
+  height: 170vh;
+  width: 100%;
+  padding: 100px 80px;
+  padding-left: 100px;
+}
+.bui > p:nth-child(1) {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bui > p:nth-child(2) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-right: 20%;
+}
+.bui > p:nth-child(3) {
+  width: 100px;
+  font-size: 13px;
+  color: white;
+  background-color: rgb(212, 33, 33);
+  margin-right: 80%;
+  margin-left: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.strategy {
+  background-color: white;
+  padding: 10px 8px;
+}
+.strategy > img {
+  width: 7vw;
+  margin-bottom: 30px;
+}
+.strategy > p:nth-child(2) {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+.strategy > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.strategy > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  margin-left: 10px;
+  width: 50px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.web > img {
+  width: 7vw;
+  margin-bottom: 20px;
+}
+.web > p:nth-child(2) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.web > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.web > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.web {
+  background-color: white;
+  padding: 10px 8px;
+}
+.mob > img {
+  width: 7vw;
+  margin-bottom: 20px;
+}
+.mob > p:nth-child(2) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.mob > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.mob > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.mob {
+  background-color: white;
+  padding: 10px 8px;
+}
+.pro > img {
+  width: 7vw;
+  margin-bottom: 20px;
+}
+.pro > p:nth-child(2) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.pro > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.pro > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.pro {
+  background-color: white;
+  padding: 10px 8px;
+}
+.dev > img {
+  width: 7vw;
+  margin-bottom: 20px;
+}
+.dev > p:nth-child(2) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.dev > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.dev > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.dev {
+  background-color: white;
+  padding: 10px 8px;
+}
+.ent > img {
+  width: 7vw;
+  margin-bottom: 20px;
+}
+.ent > p:nth-child(2) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.ent > p:nth-child(3) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.ent > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  padding: 8px 3px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.ent {
+  background-color: white;
+  padding: 10px 8px;
+}
+.box {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.box > div {
+  flex-basis: 30%;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.box > div:hover {
+  box-shadow: 1px 1px 6px 5px rgb(236, 217, 217);
+}
+@media screen and (max-width: 600px) {
+  .box > div {
+    flex-basis: 100%;
+    margin-left: 30px;
+  }
+  .rdpage {
+    flex-wrap: wrap;
+    height: 100%;
+    padding-left: 30px;
+  }
+}
+.thpage {
+  padding: 50px 50px;
+}
+.our {
+  background-color: white;
+  flex-basis: 40%;
+  width: 100vw;
+}
+.our > p:nth-child(1) {
+  font-size: 40px;
+  margin-right: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.our > p:nth-child(2) {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.our > p:nth-child(3) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 80%;
+  width: 100px;
+  padding: 10px 5px;
+  color: white;
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mov > p:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.mov > p:nth-child(3) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.mov > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 8px 3px;
+  cursor: pointer;
+}
+.mov > img {
+  width: 350px;
+}
+@media screen and (max-width: 600px) {
+  .mov > img {
+    width: 85vw;
+  }
+}
+.big > p:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.big > p:nth-child(3) {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.big > p:nth-child(4) {
+  background-color: rgb(212, 33, 33);
+  margin-right: 70%;
+  width: 50px;
+  margin-left: 10px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 8px 3px;
+  cursor: pointer;
+}
+.big > img {
+  width: 350px;
+  margin-top: 10px;
+}
+.big {
+  flex-basis: 55%;
+}
+.mov {
+  flex-basis: 45%;
+  margin-top: 10px;
+}
+.mov > p {
+  width: 80%;
+}
+.big > p {
+  width: 65%;
+}
+@media screen and (max-width: 600px) {
+  .big > img {
+    width: 85vw;
+  }
+}
+
+.thpage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mmov {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .thpage {
+    flex-wrap: wrap;
+  }
+  .mmov {
+    flex-wrap: wrap;
+  }
+  .our {
+    flex-basis: 100%;
+  }
+}
+.vepage {
+  height: 60vh;
+  width: 100vw;
+  padding: 100px 150px;
+
+  background-color: aliceblue;
+}
+.vepage > p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+.vepage > :nth-child(2) {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+.vepage > p:nth-child(3) {
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  padding: 30px 10px;
+  margin-right: 30%;
+  padding-left: 20px;
+  line-height: 25px;
+}
+.vepage > p:nth-child(3):hover {
+  box-shadow: 1px 1px 5px 8px rgb(175, 165, 165);
+}
+@media screen and (max-width: 600px) {
+  .vepage {
+    padding: 50px 30px;
+  }
+}
+.xpage {
+  padding: 100px 80px;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(212, 33, 33);
+}
+.xpage > p:nth-child(1) {
+  font-size: 35px;
+  padding: 30px 80px;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  width: 90%;
+  margin-bottom: 20px;
+}
+.let {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.let > p:nth-child(1) {
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 50px;
+  margin-right: 20px;
+}
+.let > p:nth-child(1):hover {
+  background-color: rgb(139, 28, 28);
+  color: white;
+  cursor: pointer;
+}
+.let > p:nth-child(2) {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 10px 50px;
+}
+.let > p:nth-child(2):hover {
+  background-color: black;
+  color: white;
+}
+
+.lpage {
+  background-color: black;
+
+  color: white;
+  padding: 100px 60px;
+  height: 100vh;
+  width: 100vw;
+}
+.thr {
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  display: flex;
+
+  justify-content: space-around;
+}
+.thr > div > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  color: rgb(156, 144, 144);
+  font-weight: 20px;
+}
+.thr > div > h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.ai {
+  display: flex;
+  /* background-color: rgb(212, 33, 33); */
+  margin-top: -100px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ai > img {
+  margin-right: 20px;
+  width: 7vw;
+}
+.ai > p {
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .thr {
+    flex-direction: column;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+  }
+  .ai {
+    align-items: center;
+    flex-direction: column;
+  }
+  .ai > img {
+    width: 15vw;
+  }
+  .ai > p {
+    margin-top: 20px;
+  }
+  .lpage {
+    height: 100%;
+  }
+
+  .xpage > p:nth-child(1) {
+    width: 100%;
+    font-size: 25px;
+    padding: 0px;
+  }
+  .xpage {
+    padding: 30px;
+  }
+}
